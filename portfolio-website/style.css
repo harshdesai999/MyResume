@@ -1,0 +1,452 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+    color: #333;
+    background: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navigation Bar */
+nav {
+    background: #2c3e50;
+    color: #fff;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+    margin: 0;
+    display: inline;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #1abc9c;
+}
+
+/* Home Section */
+.home-section {
+    background: #3498db;
+    padding: 150px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.home-section h2 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.home-section p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #1abc9c;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background: #16a085;
+    transform: translateY(-3px);
+}
+
+/* About Me Section */
+.about-section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 60%;
+}
+
+.about-text h3 {
+    font-size: 1.8em;
+    margin-top: 20px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.about-text ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #555;
+}
+
+.about-text ul li {
+    margin-bottom: 10px;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 35%;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Work Experience Section */
+.experience-section {
+    padding: 80px 0;
+    background: #f9f9f9;
+}
+
+.experience-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.experience-item {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.experience-item h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.experience-item p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.experience-item ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #555;
+}
+
+.experience-item ul li {
+    margin-bottom: 10px;
+}
+
+/* Education Section */
+.education-section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.education-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.education-item {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.education-item h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.education-item p {
+    color: #555;
+}
+
+.college-photo {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 80px 0;
+    background: #f9f9f9;
+}
+
+.project-tabs {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.tab-link {
+    background: #2c3e50;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.tab-link.active {
+    background: #1abc9c;
+}
+
+.tab-link:hover {
+    background: #1abc9c;
+    transform: translateY(-3px);
+}
+
+.project-content {
+    display: none;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-content.active {
+    display: block;
+}
+
+.project-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-content h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.project-content p {
+    color: #555;
+}
+
+/* Hobbies Section */
+.hobbies-section {
+    padding: 80px 0;
+    background: #fff;
+    text-align: center;
+}
+
+.hobbies-content {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.hobby-item {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.hobby-item:hover {
+    transform: translateY(-10px);
+}
+
+.hobby-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.hobby-item:hover .hobby-icon {
+    transform: scale(1.1);
+}
+
+.hobby-item p {
+    color: #555;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 80px 0;
+    background: #f9f9f9;
+}
+
+.contact-description {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    font-size: 1.1em;
+    color: #555;
+    text-align: center;
+}
+
+.contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section input, .contact-section textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.contact-section input:focus, .contact-section textarea:focus {
+    border-color: #1abc9c;
+    outline: none;
+}
+
+.contact-section textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.contact-section button {
+    background: #1abc9c;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contact-section button:hover {
+    background: #16a085;
+    transform: translateY(-3px);
+}
+
+.social-links {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.social-links a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #2c3e50;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #1abc9c;
+}
+
+/* Resume and Cover Letter Section */
+.resume-section {
+    padding: 80px 0;
+    background: #fff;
+    text-align: center;
+}
+
+.resume-links {
+    margin-top: 30px;
+}
+
+.resume-links a {
+    margin: 0 15px;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+    font-weight: 500;
+}
